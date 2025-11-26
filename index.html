@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="styles.css" />
+    <title>Document</title>
+  </head>
+  <body>
+    <div class="slide-container">
+      <div class="gallery-icon" onclick="openModal()">
+        <svg viewBox="0 0 24 24">
+          <path
+            d="M3 13h8V3H3v10zm0 8h8v-6H3v6zm10 0h8V11h-8v10zm0-18v6h8V3h-8z"
+          />
+        </svg>
+      </div>
+
+      <div class="slide-content" id="slideContent">
+        <!-- Contenu dynamique -->
+      </div>
+
+      <div class="navigation">
+        <button class="nav-btn" onclick="previousSlide()">
+          <svg viewBox="0 0 24 24">
+            <path d="M15.41 7.41L14 6l-6 6 6 6 1.41-1.41L10.83 12z" />
+          </svg>
+        </button>
+        <span class="slide-indicator" id="slideIndicator">1 / 5</span>
+        <button class="nav-btn" onclick="nextSlide()">
+          <svg viewBox="0 0 24 24">
+            <path d="M10 6L8.59 7.41 13.17 12l-4.58 4.59L10 18l6-6z" />
+          </svg>
+        </button>
+      </div>
+    </div>
+
+    <div class="modal" id="modal">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h2 class="modal-title">Équipage</h2>
+          <div class="close-btn" onclick="closeModal()">✕</div>
+        </div>
+        <div class="filter-buttons">
+          <button class="filter-btn active" onclick="sortBy('none')">
+            Ordre Original
+          </button>
+          <button class="filter-btn" onclick="sortBy('name')">Nom (A-Z)</button>
+          <button class="filter-btn" onclick="sortBy('rank')">Rang</button>
+        </div>
+        <div class="crew-list" id="crewList">
+          <!-- Liste dynamique -->
+        </div>
+      </div>
+    </div>
+    <script src="js/script.js"></script>
+  </body>
+</html>
