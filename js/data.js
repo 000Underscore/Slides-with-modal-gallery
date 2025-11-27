@@ -35,7 +35,7 @@ const crewMembers = [
     photo: "/img/victor_glover.png",
     rankOrder: 3,
   },
-  {
+{
     name: "Yuki Tanaka",
     rank: "Spécialiste Sciences",
     description:
@@ -43,6 +43,42 @@ const crewMembers = [
     initial: "Y",
     photo: "",
     rankOrder: 5,
+  },
+  {
+    name: "Ahmed Hassan",
+    rank: "Spécialiste Communication",
+    description:
+      "Expert en systèmes de communication interplanétaire, Ahmed assure le lien constant avec la Terre. Sa maîtrise de 6 langues facilite la collaboration internationale.",
+    initial: "A",
+    photo: "",
+    rankOrder: 6,
+  },
+  {
+    name: "Isabelle Rodriguez",
+    rank: "Botaniste Spatiale",
+    description:
+      "Pionnière de l'agriculture spatiale, Isabelle développe des systèmes hydroponiques pour nourrir l'équipage. Ses expériences sur la croissance des plantes en apesanteur sont vitales.",
+    initial: "I",
+    photo: "",
+    rankOrder: 7,
+  },
+  {
+    name: "Dr. Robert Kim",
+    rank: "Psychologue de Mission",
+    description:
+      "Spécialiste du comportement en environnement confiné, Robert maintient la cohésion et la santé mentale de l'équipage durant les longs voyages spatiaux.",
+    initial: "R",
+    photo: "",
+    rankOrder: 8,
+  },
+  {
+    name: "Nina Petrov",
+    rank: "Opératrice Robotique",
+    description:
+      "Expert en robotique et IA, Nina pilote les drones d'exploration et les bras robotiques pour les missions extravéhiculaires. Sa précision est inégalée.",
+    initial: "N",
+    photo: "",
+    rankOrder: 9,
   },
 ];
 
