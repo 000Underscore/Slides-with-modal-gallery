@@ -42,17 +42,21 @@
           <div class="close-btn" onclick="closeModal()">✕</div>
         </div>
         <div class="filter-buttons">
-          <button class="filter-btn active" onclick="sortBy('none')">
+          <button class="filter-btn active" onclick="sortBy('none', this)">
             Ordre Original
           </button>
-          <button class="filter-btn" onclick="sortBy('name')">Nom (A-Z)</button>
-          <button class="filter-btn" onclick="sortBy('rank')">Rang</button>
+          <button class="filter-btn" onclick="sortBy('name', this)">
+            Nom (A-Z)
+          </button>
+          <button class="filter-btn" onclick="sortBy('rank', this)">
+            Rang
+          </button>
         </div>
         <div class="crew-list" id="crewList">
           <!-- Liste dynamique -->
         </div>
       </div>
     </div>
-    <script src="js/script.js"></script>
+    <script type="module" src="js/display.js"></script>
   </body>
 </html>
